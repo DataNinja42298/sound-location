@@ -1,0 +1,13 @@
+Fs = 16000;
+T1 = readtable('fusiwu_siwu_two_point2.txt');
+T1(:,18)=[];
+T1(:,1)=[];
+T1 = table2array(T1);
+ch13 = T1(:,13)+2.40;
+audiowrite('zero_zero_one_ch13.wav',ch13,Fs);
+ch14 = T1(:,14)+2.40;
+audiowrite('zero_zero_one_ch14.wav',ch14,Fs);
+ch15= T1(:,15)+2.40;
+audiowrite('zero_zero_one_ch15.wav',ch15,Fs);
+ch16= T1(:,16)+2.40;
+audiowrite('zero_zero_one_ch16.wav',ch16,Fs);
